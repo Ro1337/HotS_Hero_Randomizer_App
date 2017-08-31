@@ -35,7 +35,7 @@ This app is for the community so its should be by the community so please feel f
 Enjoy!
 
 
-
+---
 
 
 ### Legal Info:
