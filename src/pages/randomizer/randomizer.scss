@@ -1,0 +1,31 @@
+page-randomizer {
+  ion-item:not(.mws-menu-item-t){
+    padding-left: 0 !important;
+
+    .item-inner{
+      padding-right: 0 !important;
+      .input-wrapper ion-label{
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  button.item{
+    padding-left: 0 !important;
+    .item-inner {
+      padding: 0 !important;
+      .input-wrapper ion-label{
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .mws-menu-item-t {
+    padding-left: 0 !important;
+    background-color: rgba(51,30,130,0.35) !important;
+    color: #eee;
+    .item-inner{
+      padding: 0 8px !important;
+    }
+  }
+}

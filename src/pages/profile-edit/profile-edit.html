@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Edit Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid *ngIf="Account.uid !== null">
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item class="item-inner-no-border-bottom mws-menu-item-t" style="max-height: 8px;height: 8px !important;" text-center>Profile Info</ion-item>
+          <ion-item *ngFor="let keytext of ProfileKeys" style="padding-left: 8px !important;" class="mws-menu-item-t">
+            <ion-label stacked>{{ keytext }}</ion-label>
+            <ion-input [(ngModel)]="ProfileLoaded[keytext]" type="text"></ion-input>
+          </ion-item>
+          <ion-item class="item-inner-no-border-bottom mws-menu-item-t" style="max-height: 8px;height: 8px !important;"></ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button block color="secondary" style="padding: 25px;margin-top: 15px;" (click)="saveProfile()">Save</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

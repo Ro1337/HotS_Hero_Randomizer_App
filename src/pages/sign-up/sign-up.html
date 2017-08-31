@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sign Up</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item style="padding-left:8px !important;" class="mws-menu-item-t item-inner-no-border-bottom" text-center>Your Information</ion-item>
+    <ion-item style="padding-left:8px !important;" class="mws-menu-item-t">
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email_address"></ion-input>
+    </ion-item>
+    <ion-item style="padding-left:8px !important;" class="mws-menu-item-t">
+      <ion-label stacked>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password_phrase"></ion-input>
+    </ion-item>
+    <ion-item style="padding-left:8px !important;" class="mws-menu-item-t">
+      <ion-label stacked>Verify Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password_phrase2"></ion-input>
+    </ion-item>
+    <ion-item style="padding-left:8px !important;" class="mws-menu-item-t"></ion-item>
+  </ion-list>
+  <button block ion-button color="secondary" style="font-size: 14pt;padding: 25px;margin-top: 15px;" (click)="sendSignup()">Submit</button>
+</ion-content>

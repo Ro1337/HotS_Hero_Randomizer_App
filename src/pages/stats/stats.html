@@ -1,0 +1,66 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Randomizer Stats</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-grid *ngIf="Account.uid !== null">
+
+    <ion-row>
+      <ion-col>
+        <ion-list class="statsList" style="border: 1px solid #000">
+          <ion-item class="mws-menu-item-t">
+            Total Randomed <div style="float: right;">{{Account.currentUser.RandomStats.TotalRandomed}}</div>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list class="statsList" style="border: 1px solid #000">
+          <ion-item class="mws-menu-item-t" text-center style="font-size: 14pt;font-weight: bold;">Universe Randomed</ion-item>
+          <ion-item class="mws-menu-item-t" *ngFor="let item of Account.uniKeys">
+            {{item}} <div style="float: right;">{{Account.currentUser.RandomStats.UniverseData[item]}}</div>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list class="statsList" style="border: 1px solid #000">
+          <ion-item class="mws-menu-item-t" text-center style="font-size: 14pt;font-weight: bold;">Role Randomed</ion-item>
+          <ion-item class="mws-menu-item-t" *ngFor="let item of Account.groupsKeys">
+            {{item}} <div style="float: right;">{{Account.currentUser.RandomStats.GroupsData[item]}}</div>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list class="statsList" style="border: 1px solid #000">
+          <ion-item class="mws-menu-item-t" text-center style="font-size: 14pt;font-weight: bold;">Sub-Role Randomed</ion-item>
+          <ion-item class="mws-menu-item-t" *ngFor="let item of Account.subGroupsKeys">
+            {{item}} <div style="float: right;">{{Account.currentUser.RandomStats.SubGroupsData[item]}}</div>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list class="statsList" style="border: 1px solid #000">
+          <ion-item class="mws-menu-item-t" text-center style="font-size: 14pt;font-weight: bold;">Heroes Randomed</ion-item>
+          <ion-item class="mws-menu-item-t" *ngFor="let item of Account.heroKeys">
+            {{item}} <div style="float: right;">{{Account.currentUser.RandomStats.IndividualHerosData[item]}}</div>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

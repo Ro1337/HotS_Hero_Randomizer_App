@@ -1,0 +1,39 @@
+<ion-content padding>
+  <button ion-button block (click)="this.HeroService.resetFilters()">Reset Filters</button>
+
+  <div style="margin-bottom: 10px"></div>
+  <ion-list>
+    <ion-item class="mws-menu-item-t" style="text-align: center">
+      <ion-label><h1>Universe Filters</h1></ion-label>
+    </ion-item>
+    <ion-item class="mws-menu-item-t" *ngFor="let item of this.HeroService.heroUniverseStates">
+      <ion-label>{{item.name}}</ion-label>
+      <ion-toggle (ionChange)="HeroService.filterHeroList()" [(ngModel)]="item.enabled"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <div style="margin-bottom: 25px"></div>
+  <ion-list>
+    <ion-item class="mws-menu-item-t" style="text-align: center">
+      <ion-label><h1>Role Filters</h1></ion-label>
+    </ion-item>
+    <ion-item class="mws-menu-item-t" *ngFor="let item of this.HeroService.heroGroupsStates">
+      <ion-label>{{item.name}}</ion-label>
+      <ion-toggle (ionChange)="HeroService.filterHeroList()" [(ngModel)]="item.enabled"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <div style="margin-bottom: 25px"></div>
+
+  <ion-list>
+    <ion-item class="mws-menu-item-t" style="text-align: center">
+      <ion-label><h1>Sub-Role Filters</h1></ion-label>
+    </ion-item>
+    <ion-item class="mws-menu-item-t" *ngFor="let item of this.HeroService.heroSubGroupsStates">
+      <ion-label>{{item.name}}</ion-label>
+      <ion-toggle (ionChange)="HeroService.filterHeroList()" [(ngModel)]="item.enabled"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <div style="margin-bottom: 8px"></div>
+</ion-content>

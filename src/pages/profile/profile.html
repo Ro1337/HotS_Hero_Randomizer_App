@@ -1,0 +1,43 @@
+<ion-content padding style="color: #fff !important;">
+
+  <ion-grid *ngIf="Account.uid !== null">
+    <ion-row>
+      <ion-col text-center>
+        <h3>Hello, {{ Account.currentUser.Profile.Nickname }}!</h3>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list style="margin-top: 12px;">
+          <button class="mws-menu-item-t" ion-item (click)="goToProfileEdit()"><ion-icon name="md-create"></ion-icon> Edit Profile <div float-end><ion-icon name="ios-arrow-forward"></ion-icon></div></button>
+          <button class="mws-menu-item-t" ion-item (click)="goToRandomizerStats()"><ion-icon name="md-stats"></ion-icon> Ramdomizing Stats <div float-end><ion-icon name="ios-arrow-forward"></ion-icon></div></button>
+          <button class="mws-menu-item-t" ion-item ><ion-icon name="md-construct"></ion-icon> HoTSLogs Player Stats (NYI) <div float-end><ion-icon name="ios-arrow-forward"></ion-icon></div></button>
+          <button class="mws-menu-item-t" ion-item ><ion-icon name="md-construct"></ion-icon> HoTSLogs Hero Overview (NYI) <div float-end><ion-icon name="ios-arrow-forward"></ion-icon></div></button>
+          <button class="mws-menu-item-t" ion-item ><ion-icon name="md-construct"></ion-icon> HoTSLogs Match History (NYI) <div float-end><ion-icon name="ios-arrow-forward"></ion-icon></div></button>
+        </ion-list>
+
+        <button ion-button block style="padding: 25px;margin-top: 25px;" color="danger" (click)="Account.signOutOfApp();">Log Out</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid *ngIf="Account.uid === null">
+    <ion-list text-center >
+      <ion-item text-center style="padding-left: 8px !important;" class="item-inner-no-border-bottom mws-menu-item-t"><ion-icon style="font-size: 40pt;color: #fff;" name="md-person"></ion-icon></ion-item>
+      <ion-item style="padding-left: 8px !important;" class="mws-menu-item-t">
+        <ion-label stacked>Email</ion-label>
+        <ion-input type="email" [(ngModel)]="username"></ion-input>
+      </ion-item>
+      <ion-item style="padding-left: 8px !important;" class="mws-menu-item-t">
+        <ion-label stacked>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-item class="mws-menu-item-t item-inner-no-border-bottom"></ion-item>
+    </ion-list>
+      <button ion-button color="secondary" style="font-size: 14pt;padding: 25px;margin: 0 auto;width: 90%" (click)="signIn()"><ion-icon name="md-unlock"></ion-icon>&nbsp;Login</button>
+      <button ion-button color="primary" style="font-size: 14pt;padding: 25px;margin: 15px auto 0 auto;width: 90%" block (click)="gotoSignUp()"><ion-icon name="md-create"></ion-icon>&nbsp;Sign Up</button>
+    <a text-center style="margin-top: 30px;" (tap)="Account.forgotPassword(username)">Forgot Password</a>
+  </ion-grid>
+
+</ion-content>

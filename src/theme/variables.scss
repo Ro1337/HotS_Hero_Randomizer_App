@@ -1,0 +1,159 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+.mws-menu-item-t {
+  padding-left: 0 !important;
+  background-color: rgba(51,30,130,0.35) !important;
+  color: #eee !important;
+  .item-inner{
+    padding: 0 8px !important;
+    .input-wrapper ion-label{
+      margin-right: 0 !important;
+    }
+  }
+}
+
+ion-icon{
+  min-width: 18px;
+}
+
+ion-list {
+  border: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+.statsList ion-item .item-inner{
+  padding-left: 8px !important;
+}
+
+.statsList ion-item .item-inner .input-wrapper ion-label{
+  margin-right: 0 !important;
+}
+
+.item-inner-no-border-bottom {
+  ion-checkbox{
+    margin-right: 10px !important;
+  }
+  .item-inner{
+    padding-top: 2px;
+    border-bottom: none !important;
+  }
+}
+
+ion-content{
+  background: url("../assets/images/432.jpg") no-repeat center center fixed !important;
+  //background-color: rgba(51, 30, 130, 1) !important;
+  background-size: cover !important;
+}
+
+ion-content.has-refresher {
+  background-color: rgba(51, 30, 130, 1) !important;
+}
+
+ion-refresher-content{
+  background-color: rgba(51, 30, 130, 0.4) !important;
+}
+
+ion-content.has-refresher > .scroll-content{
+  background: url("../assets/images/432.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+a:not(.tab-button){
+  color: #488aff !important;
+}
+$tabs-md-tab-text-color: #ddd;
+$tabs-background: rgb(51,30,130);
+$toolbar-background: rgb(51,30,130);
+$tabs-md-tab-icon-color-active: rgb(255,203,44);
+$tabs-md-tab-icon-color: #fff;
+$refresher-icon-color: #fff;
+$refresher-text-color: $refresher-icon-color;
+.tab-button-text{
+  color: #fff !important;
+}
+$toggle-md-handle-background-color-off: #666;
+$toggle-md-track-background-color-on: lighten(rgb(51,30,130), 25%);
+$toggle-md-active-color: darken(rgb(235,183,24), 1%);
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    rgb(51,30,130),
+  secondary:  #02ab34,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  yellowish:  rgba(255,255,10,1),
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";

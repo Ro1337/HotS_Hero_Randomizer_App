@@ -1,0 +1,425 @@
+{
+  "Heroes" : [
+    {
+      "Group" : "Warrior",
+      "ImageURL" : "Garrosh",
+      "PrimaryName" : "Garrosh",
+      "SubGroup" : "Tank",
+      "Universe" : "Warcraft"
+    },
+    {
+      "Group" : "Specialist",
+      "ImageURL" : "Abathur",
+      "PrimaryName" : "Abathur",
+      "SubGroup" : "Utility",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Alarak",
+      "PrimaryName" : "Alarak",
+      "SubGroup" : "Ambusher",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Anubarak",
+      "PrimaryName" : "Anub'arak",
+      "SubGroup" : "Tank",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Artanis",
+      "PrimaryName" : "Artanis",
+      "SubGroup" : "Bruiser",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Arthas",
+      "PrimaryName" : "Arthas",
+      "SubGroup" : "Bruiser",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Support",
+      "ImageURL" : "Auriel",
+      "PrimaryName" : "Auriel",
+      "SubGroup" : "Healer",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Specialist",
+      "ImageURL" : "Azmodan",
+      "PrimaryName" : "Azmodan",
+      "SubGroup" : "Siege",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Support",
+      "ImageURL" : "Brightwing",
+      "PrimaryName" : "Brightwing",
+      "SubGroup" : "Healer",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Cassia",
+      "PrimaryName" : "Cassia",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Chen",
+      "PrimaryName" : "Chen",
+      "SubGroup" : "Bruiser",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Cho",
+      "PrimaryName" : "Cho",
+      "SubGroup" : "Tank",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Chromie",
+      "PrimaryName" : "Chromie",
+      "SubGroup" : "Burst Damage",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "DVa",
+      "PrimaryName" : "D.Va",
+      "SubGroup" : "Tank",
+      "Universe" : "Overwatch"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Dehaka",
+      "PrimaryName" : "Dehaka",
+      "SubGroup" : "Bruiser",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Diablo",
+      "PrimaryName" : "Diablo",
+      "SubGroup" : "Tank",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "ETC",
+      "PrimaryName" : "E.T.C.",
+      "SubGroup" : "Tank",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Falstad",
+      "PrimaryName" : "Falstad",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Gall",
+      "PrimaryName" : "Gall",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Specialist",
+      "ImageURL" : "Gazlowe",
+      "PrimaryName" : "Gazlowe",
+      "SubGroup" : "Siege",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Genji",
+      "PrimaryName" : "Genji",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Overwatch"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Greymane",
+      "PrimaryName" : "Greymane",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Guldan",
+      "PrimaryName" : "Gul'dan",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Illidan",
+      "PrimaryName" : "Illidan",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Jaina",
+      "PrimaryName" : "Jaina",
+      "SubGroup" : "Burst Damage",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Johanna",
+      "PrimaryName" : "Johanna",
+      "SubGroup" : "Tank",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Kaelthas",
+      "PrimaryName" : "Kael'thas",
+      "SubGroup" : "Burst Damage",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Kerrigan",
+      "PrimaryName" : "Kerrigan",
+      "SubGroup" : "Ambusher",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Support",
+      "ImageURL" : "Kharazim",
+      "PrimaryName" : "Kharazim",
+      "SubGroup" : "Healer",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Leoric",
+      "PrimaryName" : "Leoric",
+      "SubGroup" : "Bruiser",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Support",
+      "ImageURL" : "LiLi",
+      "PrimaryName" : "Li Li",
+      "SubGroup" : "Healer",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "LiMing",
+      "PrimaryName" : "Li-Ming",
+      "SubGroup" : "Burst Damage",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Support",
+      "ImageURL" : "LtMorales",
+      "PrimaryName" : "Lt. Morales",
+      "SubGroup" : "Healer",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Support",
+      "ImageURL" : "Lúcio",
+      "PrimaryName" : "Lúcio",
+      "SubGroup" : "Healer",
+      "Universe" : "Overwatch"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Lunara",
+      "PrimaryName" : "Lunara",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Support",
+      "ImageURL" : "Malfurion",
+      "PrimaryName" : "Malfurion",
+      "SubGroup" : "Healer",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Malthael",
+      "PrimaryName" : "Malthael",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Specialist",
+      "ImageURL" : "Medivh",
+      "PrimaryName" : "Medivh",
+      "SubGroup" : "Helper",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Muradin",
+      "PrimaryName" : "Muradin",
+      "SubGroup" : "Tank",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Specialist",
+      "ImageURL" : "Murky",
+      "PrimaryName" : "Murky",
+      "SubGroup" : "Utility",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Specialist",
+      "ImageURL" : "Nazeebo",
+      "PrimaryName" : "Nazeebo",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Nova",
+      "PrimaryName" : "Nova",
+      "SubGroup" : "Ambusher",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Specialist",
+      "ImageURL" : "Probius",
+      "PrimaryName" : "Probius",
+      "SubGroup" : "Siege",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Ragnaros",
+      "PrimaryName" : "Ragnaros",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Raynor",
+      "PrimaryName" : "Raynor",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Support",
+      "ImageURL" : "Rehgar",
+      "PrimaryName" : "Rehgar",
+      "SubGroup" : "Healer",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Rexxar",
+      "PrimaryName" : "Rexxar",
+      "SubGroup" : "Tank",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Samuro",
+      "PrimaryName" : "Samuro",
+      "SubGroup" : "Ambusher",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Specialist",
+      "ImageURL" : "SgtHammer",
+      "PrimaryName" : "Sgt. Hammer",
+      "SubGroup" : "Siege",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Sonya",
+      "PrimaryName" : "Sonya",
+      "SubGroup" : "Bruiser",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Stitches",
+      "PrimaryName" : "Stitches",
+      "SubGroup" : "Tank",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Support",
+      "ImageURL" : "Stukov",
+      "PrimaryName" : "Stukov",
+      "SubGroup" : "Healer",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Specialist",
+      "ImageURL" : "Sylvanas",
+      "PrimaryName" : "Sylvanas",
+      "SubGroup" : "Siege",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Support",
+      "ImageURL" : "Tassadar",
+      "PrimaryName" : "Tassadar",
+      "SubGroup" : "Helper",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "TheButcher",
+      "PrimaryName" : "The Butcher",
+      "SubGroup" : "Ambusher",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Specialist",
+      "ImageURL" : "TheLostVikings",
+      "PrimaryName" : "The Lost Vikings",
+      "SubGroup" : "Utility",
+      "Universe" : "Blizzard"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Thrall",
+      "PrimaryName" : "Thrall",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Tracer",
+      "PrimaryName" : "Tracer",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Overwatch"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Tychus",
+      "PrimaryName" : "Tychus",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Tyrael",
+      "PrimaryName" : "Tyrael",
+      "SubGroup" : "Bruiser",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Support",
+      "ImageURL" : "Tyrande",
+      "PrimaryName" : "Tyrande",
+      "SubGroup" : "Helper",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Support",
+      "ImageURL" : "Uther",
+      "PrimaryName" : "Uther",
+      "SubGroup" : "Healer",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Valeera",
+      "PrimaryName" : "Valeera",
+      "SubGroup" : "Ambusher",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Valla",
+      "PrimaryName" : "Valla",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Varian",
+      "PrimaryName" : "Varian",
+      "SubGroup" : "Bruiser",
+      "Universe" : "Warcraft"
+    }, {
+      "Group" : "Specialist",
+      "ImageURL" : "Xul",
+      "PrimaryName" : "Xul",
+      "SubGroup" : "Siege",
+      "Universe" : "Diablo"
+    }, {
+      "Group" : "Specialist",
+      "ImageURL" : "Zagara",
+      "PrimaryName" : "Zagara",
+      "SubGroup" : "Siege",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Warrior",
+      "ImageURL" : "Zarya",
+      "PrimaryName" : "Zarya",
+      "SubGroup" : "Tank",
+      "Universe" : "Overwatch"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Zeratul",
+      "PrimaryName" : "Zeratul",
+      "SubGroup" : "Ambusher",
+      "Universe" : "Starcraft"
+    }, {
+      "Group" : "Assassin",
+      "ImageURL" : "Zuljin",
+      "PrimaryName" : "Zul'jin",
+      "SubGroup" : "Sustained Damage",
+      "Universe" : "Warcraft"
+    } ]
+}

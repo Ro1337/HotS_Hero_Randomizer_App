@@ -1,0 +1,25 @@
+<ion-content padding text-center>
+  <ion-refresher (ionRefresh)="HeroService.doRollOnPull($event)" pullMax="60">
+    <ion-refresher-content
+      pullingIcon="md-arrow-down"
+      pullingText="Pull to roll a Random Hero"
+      refreshingSpinner="crescent"
+      refreshingText="Rolling...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list style="border: 1px solid rgba(255,255,255,0.1);margin-top: 30px;">
+    <ion-item class="mws-menu-item-t">
+      <h2 style="text-align: center">{{ HeroService.SelectedHeroInfo.PrimaryName }}</h2>
+      <div style="text-align: center">
+        <img style="width: 120px;height: 120px;border: 1px solid rgba(255,255,255,0.1)" [src]="HeroService.SelectedHeroInfo.ImageURL" />
+      </div>
+    </ion-item>
+    <ion-item class="mws-menu-item-t">Games Played: <div style="float: right">{{ HeroService.currentHeroStats.gamesPlayed }}</div></ion-item>
+    <ion-item class="mws-menu-item-t">Games Banned: <div style="float: right">{{ HeroService.currentHeroStats.gamesBanned }}</div></ion-item>
+    <ion-item class="mws-menu-item-t">Popularity: <div style="float: right">{{ HeroService.currentHeroStats.popularityPercentage }}</div></ion-item>
+    <ion-item class="mws-menu-item-t">Win Rate: <div style="float: right">{{ HeroService.currentHeroStats.winPercentage }}</div></ion-item>
+  </ion-list>
+  <div>
+    <button style="display:none;max-width: 478px;margin: 0 auto" (click)="HeroService.selectRandomHero()" [color]="HeroService.MasterHeroList.length > 0 ? 'primary' : 'gray'" ion-button block class="randomizeBTN">Randomize</button>
+  </div>
+</ion-content>
