@@ -14,10 +14,10 @@
         <img style="width: 120px;height: 120px;border: 1px solid rgba(255,255,255,0.1)" [src]="HeroService.SelectedHeroInfo.ImageURL" />
       </div>
     </ion-item>
-    <ion-item class="mws-menu-item-t">Games Played: <div style="float: right">{{ HeroService.currentHeroStats.gamesPlayed }}</div></ion-item>
-    <ion-item class="mws-menu-item-t">Games Banned: <div style="float: right">{{ HeroService.currentHeroStats.gamesBanned }}</div></ion-item>
-    <ion-item class="mws-menu-item-t">Popularity: <div style="float: right">{{ HeroService.currentHeroStats.popularityPercentage }}</div></ion-item>
-    <ion-item class="mws-menu-item-t">Win Rate: <div style="float: right">{{ HeroService.currentHeroStats.winPercentage }}</div></ion-item>
+    <ion-item *ngIf="HeroService.showStats" class="mws-menu-item-t">Games Played: <div style="float: right">{{ HeroService.currentHeroStats.gamesPlayed }}</div></ion-item>
+    <ion-item *ngIf="HeroService.showStats" class="mws-menu-item-t">Games Banned: <div style="float: right">{{ HeroService.currentHeroStats.gamesBanned }}</div></ion-item>
+    <ion-item *ngIf="HeroService.showStats" class="mws-menu-item-t">Popularity: <div style="float: right">{{ HeroService.currentHeroStats.popularityPercentage }}</div></ion-item>
+    <ion-item *ngIf="HeroService.showStats" class="mws-menu-item-t">Win Rate: <div style="float: right">{{ HeroService.currentHeroStats.winPercentage }}</div></ion-item>
   </ion-list>
   <div>
     <button style="display:none;max-width: 478px;margin: 0 auto" (click)="HeroService.selectRandomHero()" [color]="HeroService.MasterHeroList.length > 0 ? 'primary' : 'gray'" ion-button block class="randomizeBTN">Randomize</button>

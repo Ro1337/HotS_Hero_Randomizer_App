@@ -19,6 +19,8 @@ export interface Hero {
 export class HeroDataProvider {
   devMode:boolean = false;
 
+  showStats:boolean = statsEndpoint !== null;
+
   SelectedHeroInfo:Hero = {
     Group: '',
     ImageURL: 'assets/imgs/rand.png',
@@ -199,18 +201,27 @@ export class HeroDataProvider {
       winPercentage: string
     };
     try {
-      let res = await this.http.get(`${statsEndpoint}/${heroName}`).toPromise();
-      let data = res.json();
-      if (data.gamesPlayed) {
-        // hero exists on the list so we use the returned data for its stats.
-        currentHeroStats = res.json();
+      if(statsEndpoint !== null) {
+        let res = await this.http.get(`${statsEndpoint}/${heroName}`).toPromise();
+        let data = res.json();
+        if (data.gamesPlayed) {
+          // hero exists on the list so we use the returned data for its stats.
+          currentHeroStats = res.json();
+        } else {
+          // couldnt get the heroes stats, either it does not exist or more likely hasnt been added to the apps list yet
+          currentHeroStats = {
+            gamesPlayed: 'N/A',
+            gamesBanned: 'N/A',
+            popularityPercentage: 'N/A',
+            winPercentage: 'N/A',
+          };
+        }
       } else {
-        // couldnt get the heroes stats, either it does not exist or more likely hasnt been added to the apps list yet
         currentHeroStats = {
-          gamesPlayed: 'N/A',
-          gamesBanned: 'N/A',
-          popularityPercentage: 'N/A',
-          winPercentage: 'N/A',
+          gamesPlayed: 'NYI',
+          gamesBanned: 'NYI',
+          popularityPercentage: 'NYI',
+          winPercentage: 'NYI',
         };
       }
     } catch(e){
