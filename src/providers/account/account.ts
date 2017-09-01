@@ -32,7 +32,6 @@ export interface UserData{
   }
 }
 
-
 @Injectable()
 export class AccountProvider {
 
@@ -44,23 +43,27 @@ export class AccountProvider {
   uniKeys:string[] = [];
   heroKeys:string[] = [];
 
+  //store the subscription to the users data like the nickname so when it changes we can update the ui, and so when the user logs out
+  //we can unsubscribe from the data.
   userDataSub:Subscription;
 
   constructor(public fireDB:AngularFireOfflineDatabase, public fireAuth:AngularFireAuth, public appEvents:Events, public alertCtrl:AlertController, public loadingCtrl:LoadingController) {
-    this.fireAuth.auth.setPersistence('local');
+    this.fireAuth.auth.setPersistence('local'); // use local persistence so we can maintain the user log in between app restarts/crashes.
+
+    // when the state of our user being authenticated changes we catch the event and handle it here.
     this.fireAuth.auth.onAuthStateChanged((user) => {
-      // console.log('current user:');
-      // console.log(JSON.stringify(this.fireAuth.auth.currentUser));
       if(this.fireAuth.auth.currentUser !== null){
+        // if we have a user in the currentUser object we subscribe to the heroRolled event so we can record stats and
+        // we call getUserData() to make sure we have the latest user info.
         if(this.fireAuth.auth.currentUser.emailVerified) {
-          // console.log('I think you logged in.');
           this.appEvents.subscribe('heroRolled', (hero)=>{
             this.heroRolled(hero);
           });
           this.getUserData(this.fireAuth.auth.currentUser.uid);
         }
       } else {
-        // console.log('I think you signed out.');
+        // if we no longer have a currentUser then make sure we are unsubscribed from the heroRolled event as there is no account to record to,
+        // and unsubscribed from the userdata, and set uid to null to show the login prompts.
         this.appEvents.unsubscribe('heroRolled');
         this.userDataSub.unsubscribe();
         this.uid = null;
@@ -71,6 +74,7 @@ export class AccountProvider {
   }
 
   getUserData(uid){
+    // set up a subscription to the user info and handle the changes to update the UI.
     this.userDataSub = this.fireDB.object(`/${uid}`).subscribe((data:UserData) => {
       if(!data.RandomStats.IndividualHerosData){
         data.RandomStats.IndividualHerosData = {};
@@ -85,7 +89,7 @@ export class AccountProvider {
   }
 
   async signOutOfApp(){
-    this.fireAuth.auth.signOut();
+    this.fireAuth.auth.signOut(); // simple call signout and the onAuthStateChanged will catch this and handle us no longer having a currentUser
     this.alertCtrl.create({title:'Goodbye',message:'You have been logged out, I hope you\'ll come back soon :\'( ', buttons:['Farewell']}).present();
   }
 
@@ -112,7 +116,6 @@ export class AccountProvider {
 
   heroRolled(hero:Hero){
     if(this.uid !== null){
-      //console.log('Hero rolled');
       let grp = hero.Group;
       let sgrp = hero.SubGroup;
       let hname = hero.ImageURL.substr(hero.ImageURL.lastIndexOf('/') + 1).replace('.png', '');
@@ -126,9 +129,7 @@ export class AccountProvider {
       this.currentUser.RandomStats.IndividualHerosData[hname] += 1;
       this.fireDB.object(`/${this.uid}/RandomStats/IndividualHerosData`).set(this.currentUser.RandomStats.IndividualHerosData);
       this.fireDB.object(`/${this.uid}/RandomStats/TotalRandomed`).set(this.currentUser.RandomStats.TotalRandomed + 1);
-    } /*else {
-      console.log('No account to add stats to.');
-    }*/
+    }
   }
 
   forgotPassword(emailAddress){
